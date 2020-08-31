@@ -9,7 +9,7 @@ var appId = '8d04313451f5780cdf161a02fea4ab32';
 document.body.style.backgroundImage = "url('https://images.pexels.com/photos/5412/water-blue-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')";
 
 searchWeather = () => {
-  axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${appId}&units=${units}`)
+  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${appId}&units=${units}`)
   .then((response) => {
     console.log(response);
     setValues(response);
